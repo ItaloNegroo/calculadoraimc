@@ -1,19 +1,29 @@
 # Calculadora IMC
-Desc
-
+Esse projeto é um App Andriod Nativo, desenvolvido com linguagem de programação(Kotlin), tem como principal funcionalidade de realizar o cálculo do Imca e o seu resultado na tela seguinte 
 ## :camera_flash: Screenshots
 <!-- You can add more screenshots here if you like -->
-Screenshots
+<img src = "https://github.com/user-attachments/assets/d80f7de2-aa70-4a9b-ae6d-78ab40cd4af2" width = 200/>
+<img src = "https://github.com/user-attachments/assets/f6d9f7f2-7044-41be-ba09-8c732eb29ae8" width = 200/>
 
 ## Tecnologias
-Techs
+- Activity
+- Intent
+- SnackBar
+- ViewGroups
+   - LinearLayout
+   - ConstraintLayout
+- Views
+   - ImageView
+   - TextView
+   - EditText
+   - Button
 
 
 ## License
 ```
 The MIT License (MIT)
 
-Copyright (c) 2023 Roque Buarque Junior
+Copyright (c) 2024 Italo Forner Negro
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
