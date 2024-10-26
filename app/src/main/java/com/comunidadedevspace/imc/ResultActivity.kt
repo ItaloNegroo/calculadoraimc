@@ -24,7 +24,7 @@ class ResultActivity : AppCompatActivity() {
 
 
        val (classificacao,color) = when {
-           result <= 18.5f -> "MAGREAZA" to R.color.red
+           result <= 18.5f -> "MAGREZA" to R.color.red
            result > 18.5f && result <= 24.9f -> "NORMAL" to R.color.green
            result > 25.0f && result <= 29.9f -> "SOBREPESO" to R.color.yellow
            result > 30.0f && result <= 39.9f -> "OBESIDADE" to R.color.red
