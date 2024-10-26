@@ -1,7 +1,9 @@
 package com.comunidadedevspace.imc
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.provider.Telephony.Mms.Intents
 import android.widget.Button
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.textfield.TextInputEditText
@@ -11,28 +13,18 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // Recuperar os componentes EditText
-        // Criar uma variavele associar (=) o componente do UI<EditText>
-        // Recuperar o botão da tela
-
-        // Colocar ação no botão setOnClickListener
-        // Recuperar o texto digitando no edt peso
-
-
         val edtpeso = findViewById<TextInputEditText>(R.id.edt_peso)
         val edtaltura = findViewById<TextInputEditText>(R.id.edt_altura)
 
         val btnCalcular = findViewById<Button>(R.id.btn_calcular)
 
-
         btnCalcular.setOnClickListener {
-
 
             val pesoStr: String = edtpeso.text. toString()
             val alturaStr : String = edtaltura.text.toString()
 
             if (pesoStr == "" || alturaStr == "") {
-                // Mostrar a mensagem ao usuario
+
                 Snackbar.
                      make(
                     edtpeso,
@@ -48,7 +40,10 @@ class MainActivity : AppCompatActivity() {
                 val alturaQ2 = altura * altura
                 val resultado = peso / alturaQ2
 
-                println(" ação do botão " + resultado )
+                val intent = Intent(this,ResultActivity::class.java)
+                intent.putExtra(KEY_RESULT_IMC , resultado)
+                startActivity(intent)
+
 
             }
         }
